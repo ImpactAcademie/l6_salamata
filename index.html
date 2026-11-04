@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <meta name="description" content="Connectez-vous ou créez votre espace Orée." />
+    <title>Orée — Votre espace</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="story-panel" aria-label="Présentation d’Orée">
+        <div class="story-grain"></div>
+        <header class="brand brand-light"><span class="brand-mark">✿</span><span>orée</span></header>
+        <div class="story-content">
+          <div class="eyebrow"><span class="eyebrow-line"></span> UN ESPACE À VOTRE IMAGE</div>
+          <h1>Le début de<br>quelque chose<br><em>de beau.</em></h1>
+          <p>Retrouvez vos projets, vos idées et tout ce qui vous inspire, au même endroit.</p>
+          <div class="story-note"><div class="note-icon">✧</div><div><strong>Un espace, mille possibilités.</strong><span>Tout commence ici.</span></div><span class="note-arrow">↗</span></div>
+        </div>
+        <div class="story-bottom"><div class="avatar-stack" aria-hidden="true"><span>É</span><span>M</span><span>A</span><span>+</span></div><div class="community-copy"><strong>Rejoignez la communauté</strong><span>et faites place à vos idées.</span></div><div class="decor-orbit orbit-one"></div><div class="decor-orbit orbit-two"></div></div>
+        <div class="side-caption">PENSÉ POUR VOUS <span>·</span> FAIT POUR DURER</div>
+      </section>
+      <section class="form-panel">
+        <div class="mobile-brand brand"><span class="brand-mark">✿</span><span>orée</span></div>
+        <div class="form-wrap">
+          <div class="form-heading"><div class="welcome-tag"><span class="welcome-dot"></span> BONJOUR, BIENVENUE</div><h2 id="heading">Ravi de vous revoir<span>.</span></h2><p id="subheading">Connectez-vous pour retrouver votre espace.</p></div>
+          <div class="mode-switch" role="tablist" aria-label="Type de formulaire"><button type="button" role="tab" aria-selected="true" class="active" data-mode="login">Connexion</button><button type="button" role="tab" aria-selected="false" data-mode="signup">Créer un compte</button></div>
+          <form id="auth-form" class="auth-form">
+            <label class="field-group signup-only hidden"><span>Votre nom</span><div class="input-wrap"><input type="text" name="name" placeholder="Ex. Camille Martin" autocomplete="name"><span class="input-icon name-icon">✳</span></div></label>
+            <label class="field-group"><span>Adresse e-mail</span><div class="input-wrap"><input type="email" name="email" placeholder="vous@exemple.fr" autocomplete="email" required><span class="input-icon">✉</span></div></label>
+            <label class="field-group"><span>Mot de passe</span><div class="input-wrap"><input type="password" name="password" placeholder="8 caractères minimum" autocomplete="current-password" minlength="8" required><button type="button" class="input-action" aria-label="Afficher le mot de passe">◎</button></div></label>
+            <label class="field-group signup-only hidden"><span>Confirmer le mot de passe</span><div class="input-wrap"><input type="password" name="confirmPassword" placeholder="Saisissez-le à nouveau" autocomplete="new-password"><span class="input-icon">▣</span></div></label>
+            <div class="form-options"><label class="check-label"><input type="checkbox" name="remember" checked><span class="custom-check">✓</span><span>Se souvenir de moi</span></label><button type="button" class="text-button" id="forgot">Mot de passe oublié ?</button></div>
+            <p class="terms-copy hidden" id="terms">En créant un compte, vous acceptez nos <button type="button">conditions d’utilisation</button> et notre politique de confidentialité.</p>
+            <div class="notice hidden" id="notice" role="status"></div>
+            <button type="submit" class="submit-button"><span id="submit-label">Me connecter</span><span class="submit-arrow">→</span></button>
+          </form>
+          <div class="form-footer"><span class="footer-lock">▣</span> Vos informations restent privées et sécurisées.</div>
+        </div>
+        <footer class="legal-footer"><span>© 2025 Orée</span><span class="legal-links"><button type="button" data-notice="La politique de confidentialité sera disponible prochainement.">Confidentialité</button><i></i><button type="button" data-notice="Les conditions d’utilisation seront disponibles prochainement.">Conditions</button></span></footer>
+      </section>
+    </main>
+    <script src="src/main.js"></script>
+  </body>
+</html>
